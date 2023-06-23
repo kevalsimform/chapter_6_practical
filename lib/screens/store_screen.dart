@@ -1,9 +1,10 @@
 import 'package:chapter_6_practical/screens/tabs/android_tab.dart';
 import 'package:chapter_6_practical/screens/tabs/ios_tab.dart';
 import 'package:chapter_6_practical/values/app_styles.dart';
+import 'package:chapter_6_practical/values/constants.dart';
+import 'package:chapter_6_practical/values/strings/app_strings.dart';
 import 'package:flutter/material.dart';
-import '../values/strings/app_strings.dart';
-import '../values/constants.dart';
+
 
 class StoreScreen extends StatefulWidget {
   const StoreScreen({Key? key}) : super(key: key);

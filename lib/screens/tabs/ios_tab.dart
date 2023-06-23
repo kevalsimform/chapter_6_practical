@@ -1,7 +1,7 @@
 import 'package:chapter_6_practical/values/app_styles.dart';
+import 'package:chapter_6_practical/values/strings/app_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../values/strings/app_strings.dart';
 
 class IosTab extends StatelessWidget {
   const IosTab({Key? key}) : super(key: key);

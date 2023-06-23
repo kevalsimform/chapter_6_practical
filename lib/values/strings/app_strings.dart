@@ -29,6 +29,12 @@ class AppStrings {
   static const String setting = 'Setting';
   static const String increment = 'Increment';
 
+  static const String incrementScreen = 'Increment Screen';
+  static const String decrementScreen = 'Decrement Screen';
+
+  static const String pageNotFound = 'Page Not Found';
+
+  static const String writtenBy = 'Written by BestFolkMedicine';
   static const String back = 'Back';
 
   static const String homeUrl = 'assets/icons/home.png';

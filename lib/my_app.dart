@@ -1,7 +1,11 @@
-import 'package:chapter_6_practical/screens/home_page.dart';
+import 'package:chapter_6_practical/values/app_routes.dart';
+import 'package:chapter_6_practical/values/strings/app_route_strings.dart';
 import 'package:chapter_6_practical/values/strings/app_strings.dart';
 import 'package:chapter_6_practical/values/theme.dart';
 import 'package:flutter/material.dart';
+
+RouteObserver routeObserver = RouteObserver();
+GlobalKey<NavigatorState> navigatorKey = GlobalKey();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,7 +16,11 @@ class MyApp extends StatelessWidget {
       title: AppStrings.appTitleName,
       debugShowCheckedModeBanner: false,
       theme: themeData,
-      home: const HomePage(),
+      navigatorKey: navigatorKey,
+      initialRoute: AppRouteStrings.homePage,
+      routes: AppRoutes.routes,
+      onUnknownRoute:AppRoutes.unknownRoute,
+      navigatorObservers: [routeObserver],
     );
   }
 }

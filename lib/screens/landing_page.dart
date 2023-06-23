@@ -1,10 +1,10 @@
 import 'package:chapter_6_practical/components/heading.dart';
+import 'package:chapter_6_practical/components/horizontal_news_card.dart';
+import 'package:chapter_6_practical/components/main_news_card.dart';
+import 'package:chapter_6_practical/components/search_field.dart';
+import 'package:chapter_6_practical/values/strings/app_strings.dart';
+import 'package:chapter_6_practical/values/values.dart';
 import 'package:flutter/material.dart';
-import '../components/horizontal_news_card.dart';
-import '../components/main_news_card.dart';
-import '../components/search_bar.dart';
-import '../values/strings/app_strings.dart';
-import '../values/values.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({

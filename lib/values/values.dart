@@ -1,5 +1,6 @@
+import 'package:chapter_6_practical/model/navigation_item_data.dart';
 import 'package:chapter_6_practical/model/news_articles.dart';
-import '../model/navigation_item_data.dart';
+
 import 'strings/app_strings.dart';
 
 class AppValues {
@@ -8,6 +9,7 @@ class AppValues {
     NavigationItemData(AppStrings.cartUrl, AppStrings.store, height: 24),
     NavigationItemData(AppStrings.favoriteUrl, AppStrings.favorite),
     NavigationItemData(AppStrings.settingUrl, AppStrings.setting),
+    NavigationItemData(AppStrings.arrowUrl, AppStrings.increment, height: 18),
   ];
 
   static const List options = [
