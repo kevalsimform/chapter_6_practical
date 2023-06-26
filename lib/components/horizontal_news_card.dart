@@ -1,7 +1,11 @@
+import 'package:chapter_6_practical/model/navigation_route_arguments.dart';
 import 'package:flutter/material.dart';
 import 'package:chapter_6_practical/values/app_styles.dart';
+import 'package:chapter_6_practical/values/strings/app_route_strings.dart';
 import 'package:chapter_6_practical/values/values.dart';
 import 'package:chapter_6_practical/values/strings/app_strings.dart';
+import 'package:chapter_6_practical/values/constants.dart';
+
 
 class HorizontalNewsCard extends StatelessWidget {
   final int index;
@@ -11,7 +15,10 @@ class HorizontalNewsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        //TODO: implement onTap here
+        Navigator.of(context).pushNamed(
+          AppRouteStrings.articleDetailScreen,
+          arguments: NavigationRouteArguments(index, From.horizontalNewsCard),
+        );
       },
       overlayColor: MaterialStateProperty.all(Colors.grey.shade200),
       child: Center(

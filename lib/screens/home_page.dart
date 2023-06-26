@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:chapter_6_practical/screens/increment_screen.dart';
 import 'package:chapter_6_practical/screens/store_screen.dart';
 import 'package:chapter_6_practical/values/strings/app_strings.dart';
 import 'package:chapter_6_practical/values/app_styles.dart';
@@ -24,6 +25,7 @@ class _HomePageState extends State<HomePage> {
       const StoreScreen(),
       const Center(child: Text(AppStrings.favorite, style: AppStyles.headingStyle)),
       const Center(child: Text(AppStrings.setting, style: AppStyles.headingStyle)),
+      const IncrementScreen()
     ];
     super.initState();
   }
